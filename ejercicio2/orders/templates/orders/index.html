@@ -1,0 +1,12 @@
+{% extends "polls/header.html" %}
+
+{% block content %}
+
+	<h1>Menu</h1>
+			<div class="list-group">
+				<a href="{% url 'orders:ordersPerMonth' %}" class="list-group-item">Order Per Month</a>
+				<a href="{% url 'orders:averageOrders' %}" class="list-group-item">Average Successfull Orders</a>
+				<a href="{% url 'orders:lastMonthCount' %}" class="list-group-item">Last Month Orders</a>
+			</div>
+		</div>
+{% endblock %}

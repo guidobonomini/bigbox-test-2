@@ -1,0 +1,10 @@
+{% extends "polls/header.html" %}
+
+{% block content %}
+
+	<h1>Orders Per Month</h1>
+		{% for order in orders_completed_month %}
+			<a href="#{{forloop.counter}}" class="btn btn-default btn-lg btn-block">{{ order.state }}</a>
+		{% endfor %}
+
+{% endblock %}
